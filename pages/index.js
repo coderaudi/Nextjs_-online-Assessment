@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,28 +12,20 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to online Assessment
-        </h1>
+        <h1 className={styles.title}>Welcome to online Assessment</h1>
 
-
-            <h1>Links for testing application</h1>
-            <h1> <a href="/">home</a>  </h1>
-
-           <h1> <a href="/aboutus">aboutus</a>  </h1>
-           <h1> <a href="/contactus">contactus</a>  </h1>
-           <h1> <a href="/notifications">notifications</a>  </h1>
-           <h1> <a href="/notifications/1254">notifications/1254</a>  </h1>
-           <h1> <a href="/notifications/list">notifications/list</a>  </h1>
-           <h1> <a href="/blog">blog</a>  </h1>
-           <h1> <a href="/blogs/year2022/may/5">blogs/year2022/may/5</a>  </h1>
-           
-
+        <h1>Links for testing application</h1>
+        <Link href="/">home</Link>
+        <Link href="/aboutus">aboutus</Link>
+        <Link href="/contactus">contactus</Link>
+        <Link href="/notifications">notifications</Link>
+        <Link href="/notifications/1254">notifications/1254</Link>
+        <Link href="/notifications/list">notifications/list</Link>
+        <Link href="/blog">blog</Link>
+        <Link href="/blogs/year2022/may/5">blogs/year2022/may/5</Link>
       </main>
 
-      <footer className={styles.footer}>
-        footer
-      </footer>
+      <footer className={styles.footer}>footer</footer>
     </div>
-  )
+  );
 }
