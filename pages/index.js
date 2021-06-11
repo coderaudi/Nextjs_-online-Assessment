@@ -23,6 +23,9 @@ export default function Home() {
         <Link href="/notifications/list">notifications/list</Link>
         <Link href="/blog">blog</Link>
         <Link href="/blogs/year2022/may/5">blogs/year2022/may/5</Link>
+        <Link href="/events">events</Link>
+        <Link href="/events/4">events/4</Link>
+
       </main>
 
       <footer className={styles.footer}>footer</footer>
