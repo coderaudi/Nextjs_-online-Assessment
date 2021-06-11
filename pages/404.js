@@ -1,11 +1,19 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
+import { Result, Button } from "antd";
 
 const notFoundPage = memo(() => {
-    return (
-        <div>
-            <h1>Not found page</h1>
-        </div>
-    );
+  return (
+    <div>
+      <Result
+        status="404"
+        title="404"
+        subTitle="Sorry, the page you visited does not exist."
+        extra={<Button 
+            href={"/"}
+             type="primary">Back Home</Button>}
+      />
+    </div>
+  );
 });
 
 export default notFoundPage;
