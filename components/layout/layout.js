@@ -53,6 +53,9 @@ const OnlineAssessmentLayout = memo((props) => {
             <Menu.Item key="9" icon={<FileOutlined />}>
              <Link href="/exam/create"> Creat Exam</Link>
             </Menu.Item>
+ <Menu.Item key="9" icon={<FileOutlined />}>
+             <Link href="/exam/paper">exam</Link>
+            </Menu.Item>
           </Menu>
         </Sider>
         <Layout className="site-layout">
