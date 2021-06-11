@@ -17,6 +17,18 @@ export default function Home() {
         </h1>
 
 
+            <h1>Links for testing application</h1>
+            <h1> <a href="/">home</a>  </h1>
+
+           <h1> <a href="/aboutus">aboutus</a>  </h1>
+           <h1> <a href="/contactus">contactus</a>  </h1>
+           <h1> <a href="/notifications">notifications</a>  </h1>
+           <h1> <a href="/notifications/1254">notifications/1254</a>  </h1>
+           <h1> <a href="/notifications/list">notifications/list</a>  </h1>
+           <h1> <a href="/blog">blog</a>  </h1>
+           <h1> <a href="/blogs/year2022/may/5">blogs/year2022/may/5</a>  </h1>
+           
+
       </main>
 
       <footer className={styles.footer}>
