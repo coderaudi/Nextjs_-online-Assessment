@@ -26,13 +26,7 @@ const ExamForm = () => {
       //  onValuesChange={onFormLayoutChange}
         size={12}
       >
-        <Form.Item label="Form Size" name="size">
-          <Radio.Group>
-            <Radio.Button value="small">Small</Radio.Button>
-            <Radio.Button value="default">Default</Radio.Button>
-            <Radio.Button value="large">Large</Radio.Button>
-          </Radio.Group>
-        </Form.Item>
+       
         <Form.Item label="Input">
           <Input />
         </Form.Item>
