@@ -1,11 +1,14 @@
-import React, { memo } from 'react';
+import React, { memo } from "react";
+
+import Header from '../components/layout/header/header';
 
 const aboutus = memo(() => {
-    return (
-        <div>
-            <h1>Aboutus page</h1>
-        </div>
-    );
+  return (
+    <>
+  
+<Header />
+    </>
+  );
 });
 
 export default aboutus;
