@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 import { Layout, Menu, Breadcrumb } from "antd";
-import Link from 'next/link';
+import Link from "next/link";
 import {
   DesktopOutlined,
   PieChartOutlined,
@@ -36,25 +36,17 @@ const OnlineAssessmentLayout = memo((props) => {
 
           <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
             <Menu.Item key="1" icon={<PieChartOutlined />}>
-              Option 1
+              <Link href="/"> Dashboard</Link>
             </Menu.Item>
-            <Menu.Item key="2" icon={<DesktopOutlined />}>
-              Option 2
+            <Menu.Item key="2" icon={<FileOutlined />}>
+              <Link href="/events"> events</Link>
             </Menu.Item>
-            <SubMenu key="sub1" icon={<UserOutlined />} title="User">
-              <Menu.Item key="3">Tom</Menu.Item>
-              <Menu.Item key="4">Bill</Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
-            </SubMenu>
-            <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
-            </SubMenu>
-            <Menu.Item key="9" icon={<FileOutlined />}>
-             <Link href="/exam/create"> Creat Exam</Link>
+
+            <Menu.Item key="3" icon={<FileOutlined />}>
+              <Link href="/exam/create"> Creat Exam</Link>
             </Menu.Item>
- <Menu.Item key="9" icon={<FileOutlined />}>
-             <Link href="/exam/paper">exam</Link>
+            <Menu.Item key="4" icon={<FileOutlined />}>
+              <Link href="/exam/paper">exam</Link>
             </Menu.Item>
           </Menu>
         </Sider>
@@ -65,10 +57,6 @@ const OnlineAssessmentLayout = memo((props) => {
             style={{ padding: 0 }}
           />
           <Content style={{ margin: "0 16px" }}>
-            <Breadcrumb style={{ margin: "16px 0" }}>
-              <Breadcrumb.Item>User</Breadcrumb.Item>
-              <Breadcrumb.Item>Bill</Breadcrumb.Item>
-            </Breadcrumb>
             <div
               className="site-layout-background"
               style={{ padding: 24, minHeight: 360 }}
